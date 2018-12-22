@@ -4,7 +4,6 @@ from discord.ext.commands import Bot
 import asyncio
 
 token = open('token.txt', 'r').read()
-print(token)
 client = discord.Client()
 
 bot =commands.Bot(command_prefix="zazu ")
@@ -17,3 +16,4 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def ping(ctx):
     await bot.say("AAAAAAAAAAAAAAAAAAAAA IM ON FIRE SOMEONE PUT ME OUT")
+bot.run(token)
