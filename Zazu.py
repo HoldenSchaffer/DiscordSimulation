@@ -3,7 +3,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
 
-token = open('token.txt', r).read()
+token = open('token.txt', 'r').read()
 print(token)
 client = discord.Client()
 
